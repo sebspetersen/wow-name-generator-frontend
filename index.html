@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Character Name Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
+        .container { width: 50%; margin: auto; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        form { display: flex; flex-direction: column; }
+        label, select, button { margin-bottom: 15px; padding: 10px; }
+        button { background-color: #007bff; color: white; border: none; cursor: pointer; }
+        .result { margin-top: 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WoW Character Name Generator</h1>
+        <form action="generate.php" method="post">
+            <label for="race">Race:</label>
+            <select id="race" name="race">
+                <option value="orc">Orc</option>
+                <option value="human">Human</option>
+                <!-- Add more races as needed -->
+            </select>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="warrior">Warrior</option>
+                <option value="mage">Mage</option>
+                <!-- Add more classes as needed -->
+            </select>
+
+            <button type="submit">Generate Name</button>
+        </form>
+
+        <div class="result">
+            <?php
+            if (isset($_GET['name'])) {
+                echo "Generated Name: " . htmlspecialchars($_GET['name']);
+            }
+            ?>
+        </div>
+    </div>
+</body>
+</html>
