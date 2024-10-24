@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧙 WoW Name Generator ⚔️</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+  <header>
+    <h1>🧙 World of Warcraft Name Generator ⚔️</h1>
+    <p class="subtext">Pick a race, class, and gender to generate a fitting WoW character name 🎮</p>
+    <!-- Theme toggle button -->
+    <button id="themeToggle">🌙 Switch to Light Mode</button>
+  </header>
+
+  <main>
+    <form id="nameForm">
+      <div class="form-group">
+        <label for="race">Select Your Race 🧝‍♀️:</label>
+        <select id="race" name="race">
+          <!-- Alliance Races -->
+          <optgroup label="Alliance">
+            <option value="Human">Human 🧑</option>
+            <option value="Dwarf">Dwarf 🪓</option>
+            <option value="Night Elf">Night Elf 🌙</option>
+            <option value="Gnome">Gnome 🛠️</option>
+            <option value="Draenei">Draenei ✨</option>
+            <option value="Worgen">Worgen 🐺</option>
+            <option value="Pandaren (Alliance)">Pandaren 🐼</option>
+            <option value="Dracthyr (Alliance)">Dracthyr 🐉</option>
+          </optgroup>
+          <!-- Horde Races -->
+          <optgroup label="Horde">
+            <option value="Orc">Orc 🪓</option>
+            <option value="Undead">Undead 💀</option>
+            <option value="Tauren">Tauren 🦬</option>
+            <option value="Troll">Troll 🏹</option>
+            <option value="Blood Elf">Blood Elf 💉</option>
+            <option value="Goblin">Goblin 💰</option>
+            <option value="Pandaren (Horde)">Pandaren 🐼</option>
+            <option value="Dracthyr (Horde)">Dracthyr 🐉</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="class">Select Your Class 🏋️‍♂️:</label>
+        <select id="class" name="class">
+          <option value="Warrior">Warrior 🛡️</option>
+          <option value="Hunter">Hunter 🏹</option>
+          <option value="Priest">Priest ✝️</option>
+          <option value="Mage">Mage 🔮</option>
+          <option value="Monk">Monk 🥋</option>
+          <option value="Demon Hunter">Demon Hunter 😈</option>
+          <option value="Evoker">Evoker 🐉</option>
+          <option value="Paladin">Paladin ⚔️</option>
+          <option value="Rogue">Rogue 🗡️</option>
+          <option value="Shaman">Shaman ⚡</option>
+          <option value="Warlock">Warlock 💀</option>
+          <option value="Druid">Druid 🌿</option>
+          <option value="Death Knight">Death Knight ⚰️</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Select Your Gender 👤:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male 👨</option>
+          <option value="female">Female 👩</option>
+        </select>
+      </div>
+
+      <button type="submit">Generate Name 🎲</button>
+    </form>
+
+    <h2 id="result">⚡ Your character's name will appear here ⚡</h2>
+
+    <!-- Placeholder for Ads -->
+    <div class="ad-space">
+      <p>Ad Space 🛒 — Your ad could be here!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Made with 💖 by a World of Warcraft fan.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
