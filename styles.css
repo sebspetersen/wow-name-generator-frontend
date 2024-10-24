@@ -1,0 +1,144 @@
+/* public/styles.css */
+
+/* General Settings */
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --primary-color: #2b235d;
+    --secondary-color: #555;
+    --button-bg-color: #00c851;
+    --button-hover-bg-color: #007e33;
+    --button-text-color: white;
+    --border-color: #ddd;
+    --ad-bg-color: #fff;
+    --ad-border-color: #bbb;
+    --footer-bg-color: #f1f1f1;
+    --footer-text-color: #666;
+  }
+  
+  body.dark {
+    --bg-color: #1d1f23;
+    --text-color: #e0e0e0;
+    --primary-color: #e0bbff;
+    --secondary-color: #cfcfcf;
+    --button-bg-color: #735ae5;
+    --button-hover-bg-color: #5e35b1;
+    --button-text-color: #fff;
+    --border-color: #333;
+    --ad-bg-color: #2a2a2a;
+    --ad-border-color: #555;
+    --footer-bg-color: #25272b;
+    --footer-text-color: #999;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .subtext {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  
+  select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    background-color: var(--ad-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: var(--button-bg-color);
+    font-weight: bold;
+    color: var(--button-text-color);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05);
+  }
+  
+  h2 {
+    color: var(--button-hover-bg-color);
+    margin-top: 30px;
+  }
+  
+  .ad-space {
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px dashed var(--ad-border-color);
+    background-color: var(--ad-bg-color);
+  }
+  
+  .ad-space p {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  footer {
+    padding: 20px;
+    background-color: var(--footer-bg-color);
+    font-size: 0.9rem;
+    color: var(--footer-text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Add transition for smooth mode switching */
+  body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Ensure default dark mode */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+  }
+  
